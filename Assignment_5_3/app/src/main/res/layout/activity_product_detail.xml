@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProductDetail">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></Space>
+
+    <ImageView
+        android:id="@+id/ivProductDetailImage"
+        android:layout_width="match_parent"
+        android:layout_height="253dp"
+        app:srcCompat="@drawable/thinkpad" />
+
+    <TextView
+        android:id="@+id/tvProductDetailTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RGA Voyager 7 16GB Android Tablet"
+        android:textSize="25sp"></TextView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></Space>
+
+    <TextView
+        android:id="@+id/tvProductDetailColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Color : Black"
+        android:textSize="20sp"></TextView>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp"></Space>
+    <TextView
+        android:id="@+id/tvProductDetailID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Walmart #: 555948101"
+        android:textSize="20sp"></TextView>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp"></Space>
+    <TextView
+        android:id="@+id/tvProductTitleDetailDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Description: "
+        android:textSize="20sp"></TextView>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"></Space>
+    <TextView
+        android:id="@+id/tvProductDetailDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="here is the Description"
+        android:textSize="20sp"></TextView>
+</LinearLayout>

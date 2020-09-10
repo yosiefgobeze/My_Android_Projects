@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Quiz Application"
+        android:textSize="35sp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"></Space>
+    <TextView
+        android:id="@+id/question1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="1. What is the building block of a UI in android?"
+        android:textSize="28sp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"></Space>
+    <RadioGroup
+        android:id="@+id/rgQuestion1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <RadioButton
+            android:id="@+id/quiz_one_rb_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="View" />
+
+        <RadioButton
+            android:id="@+id/quiz_one_rb_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Service" />
+
+        <RadioButton
+            android:id="@+id/quiz_one_rb_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Intent" />
+
+    </RadioGroup>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"></Space>
+    <TextView
+        android:id="@+id/question2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="2. What is the bottom layers of an android architecture?"
+        android:textSize="28sp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"></Space>
+    <CheckBox
+        android:id="@+id/quiz_two_ch_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Core run time" />
+
+    <CheckBox
+        android:id="@+id/quiz_two_ch_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Application" />
+    <CheckBox
+        android:id="@+id/quiz_two_ch_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/checkBox"
+        android:layout_alignParentBottom="true"
+        android:text="OS Linux kernel" />
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Space
+            android:layout_width="100dp"
+            android:layout_height="match_parent"></Space>
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onSubmit"
+            android:text="Submit" />
+        <Space
+            android:layout_width="25dp"
+            android:layout_height="match_parent"></Space>
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onReset"
+            android:text="Reset" />
+    </LinearLayout>
+
+</LinearLayout>
